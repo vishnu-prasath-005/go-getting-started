@@ -12,6 +12,6 @@ func (sl *StdLogger) Log(msg string) {
 }
 
 // function
-func NewStdLogger() Logger {
+func NewStdLogger() *StdLogger {
 	return &StdLogger{}
 }

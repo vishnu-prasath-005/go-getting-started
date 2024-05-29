@@ -14,17 +14,17 @@ func main() {
 	clog.Log("Hai this in console logger")
 	flog.Log("Hai this is in the file logger")
 
-	// this defer executes last 
+	// this defer executes last
 	defer func(initial int) {
 		fmt.Println("In teh defer function", initial)
 	}(i)
 
 	i++
- // this defer executes first
+	// this defer executes first
 	defer func(initial int) {
 		fmt.Println("In teh defer function", initial)
 	}(i)
 
 	fmt.Println("In teh outside defer function", i)
-}
 
+}

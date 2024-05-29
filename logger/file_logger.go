@@ -7,13 +7,26 @@ import (
 type FileLogger struct {
 }
 
-//method
+// method
 func (fl *FileLogger) Log(msg string) {
 	log.SetPrefix("[File] ")
 	log.Println(msg)
 }
 
-//function
+// function
 func NewFileLogger() *FileLogger {
-	return &FileLogger{}
+	f := &FileLogger{}
+	return f
 }
+
+
+/*
+example for how this work flow in other language
+class FileLogger implements Logger {
+
+	@override
+	void Log(msg string) {
+
+	}
+}
+*/
